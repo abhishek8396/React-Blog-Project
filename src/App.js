@@ -1,24 +1,38 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Bollywood from './Pages/bollywood/Bollywood';
+import Home from './Pages/Home';
+import Technology from './Pages/Technology';
+import Hollywood from './Pages/Hollywood/Hollywood';
+import Fitness from './Pages/Fitness';
+import Food from './Pages/Food';
+import Error from './Component/Error';
+import Navbar from './Component/Navbar';
+import Header from './Component/Header';
+import FullView from './Pages/FullView';
 
 function App() {
   return (
+    <>
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Header/>
+    <Navbar/>
+      <Routes>
+        <Route path='/' element={<Home/>}/>
+        <Route path='/Bollywood' element={<Bollywood/>}/>
+        <Route path='/Technology' element={<Technology/>}/>
+        <Route path='/Hollywood' element={<Hollywood/>}/>
+        <Route path='/Fitness' element={<Fitness/>}/>
+        <Route path='/Food' element={<Food/>}/>
+        <Route path='*' element={<Error/>}/>
+        <Route path='/Bollywood/:name' element={<FullView/>}/>
+        <Route path='/Hollywood/:view' element={<FullView/>}/>
+        <Route path='/Technology/:view' element={<FullView/>}/>
+        <Route path='/Fitness/:view' element={<FullView/>}/>
+        <Route path='/Food/:view' element={<FullView/>}/>
+      </Routes>
     </div>
+    </>
   );
 }
 
