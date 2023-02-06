@@ -9,6 +9,7 @@ import Food from './Pages/Food/Food';
 import Navbar from './Component/Navbar';
 import Header from './Component/Header';
 import FullView from './Pages/FullView';
+import Footer from './Component/Footer';
 
 function App() {
   return (
@@ -30,6 +31,7 @@ function App() {
         <Route path='/Food/:view' element={<FullView/>}/>
       </Routes>
     </div>
+    <Footer/>
     </>
   );
 }

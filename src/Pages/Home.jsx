@@ -1,5 +1,5 @@
 import React from 'react'
-import Footer from '../Component/Footer'
+
 import Bollywood from './bollywood/Bollywood'
 import Fitness from './Fitness/Fitness'
 import Food from './Food/Food'
@@ -31,7 +31,7 @@ function Home() {
       <Technology/>
       <Food/>
       <Fitness/>
-      <Footer/>
+   
       </div>
       
       
