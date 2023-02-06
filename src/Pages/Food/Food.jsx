@@ -1,5 +1,6 @@
 import React from 'react'
-import ReusableComponent from './ReusableComponent'
+import ReusableComponent from '../ReusableComponent'
+import './Food.css'
 
 const Food = () => {
   const foodtitle=[

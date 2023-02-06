@@ -2,11 +2,10 @@ import './App.css';
 import { Routes, Route } from 'react-router-dom';
 import Bollywood from './Pages/bollywood/Bollywood';
 import Home from './Pages/Home';
-import Technology from './Pages/Technology';
+import Technology from './Pages/Technology/Technology';
 import Hollywood from './Pages/Hollywood/Hollywood';
-import Fitness from './Pages/Fitness';
-import Food from './Pages/Food';
-import Error from './Component/Error';
+import Fitness from './Pages/Fitness/Fitness';
+import Food from './Pages/Food/Food';
 import Navbar from './Component/Navbar';
 import Header from './Component/Header';
 import FullView from './Pages/FullView';
@@ -24,7 +23,6 @@ function App() {
         <Route path='/Hollywood' element={<Hollywood/>}/>
         <Route path='/Fitness' element={<Fitness/>}/>
         <Route path='/Food' element={<Food/>}/>
-        <Route path='*' element={<Error/>}/>
         <Route path='/Bollywood/:name' element={<FullView/>}/>
         <Route path='/Hollywood/:view' element={<FullView/>}/>
         <Route path='/Technology/:view' element={<FullView/>}/>

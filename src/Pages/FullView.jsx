@@ -5,9 +5,10 @@ const FullView = () => {
   const data= useLocation().state.data;
   return (
     <div className='full-view'>
-      <span>{data.title}</span>
       <img src={data.img} alt="empty" className=''full-view-image/>
+      <div>{data.title}</div>
       <p>{data.description}</p>
+      <p>{data.releaseDate}</p>
     </div>
   )
 }

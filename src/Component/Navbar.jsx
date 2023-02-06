@@ -6,6 +6,7 @@ const Navbar = () => {
   return (
     <div>
       <nav>
+        <div className='nav-iteam'>
         <ul>
           <li>
             <NavLink to='/'><h4>Home</h4></NavLink>
@@ -26,7 +27,8 @@ const Navbar = () => {
             <NavLink to='Food'><h4>Food</h4></NavLink>
           </li>
         </ul>
-      </nav><hr/>
+        </div>
+      </nav><hr className='navbar'/>
       <Outlet/>
     </div>
   )

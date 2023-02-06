@@ -1,7 +1,8 @@
 import React from 'react'
-import BollywoodTiles from '../ReusableComponent'
+import ReusableComponent from '../ReusableComponent'
+import './Hollywood.css'
 
-const Hollywood = () => {
+const Hollywood = (props) => {
   const hollywoodTitle=[
     {
       img: 'https://movies.universalpictures.com/media/02-m3g-dm-mobile-banner-1080x745-sl-f01-120922-6393deb1ec4b4-1.jpg',
@@ -29,14 +30,16 @@ const Hollywood = () => {
     },
   ]
   return (
+    <>
     <div className='home-hollywood'>
-      <div className='hollywood-title'>
+    <div className='hollywood-title'>
         <span>HollyWood Movies</span>
       </div>
       <div className='hollywood-container'>
-        <BollywoodTiles props={hollywoodTitle}/>
+        <ReusableComponent props={hollywoodTitle}/>
       </div>
     </div>
+    </>
   )
 }
 

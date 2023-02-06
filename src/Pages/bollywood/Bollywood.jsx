@@ -1,9 +1,11 @@
 import React from 'react'
+
 import ReusableComponent from '../ReusableComponent'
+import './bollywood.css'
 
 
 
-function Bollywood() {
+function Bollywood(props) {
   const bollywoodTiles =[
     {
       img:'https://i.gadgets360cdn.com/products/large/Chhatriwali-1-800x800-1674207243685.jpg?downsize=*:420',
@@ -26,15 +28,20 @@ function Bollywood() {
     
   ]
   return (
-    <div className='home-bollywood'>
-      <div className='bollywood-titles'>
-        <span className='latest-bollywood'>Latest Bollywood News</span>
+    <>
+    <div className={props ?'bollywood-titles': 'bollywood-latest-section'}>
+        <div className='latest-bollywood'>Latest Bollywood News</div><hr/>
       </div>
+    <div className='home-bollywood'>
+      
+      
       <div className='bollywoodTiles'>
             <ReusableComponent props={bollywoodTiles}/>
       </div>
+      
 
     </div>
+    </>
   )
 }
 

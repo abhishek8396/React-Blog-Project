@@ -1,5 +1,7 @@
 import React from 'react'
-import ReusableComponent from './ReusableComponent'
+import ReusableComponent from '../ReusableComponent'
+import './Technology.css'
+
 
 const Technology = () => {
   const TechnologyTitle=[
@@ -27,7 +29,7 @@ const Technology = () => {
       <div className='technology-title'>
         <span>Latest Technology</span>
       </div>
-      <div>
+      <div className='technology-div'>
         <ReusableComponent props={TechnologyTitle}/>
       </div>
     </div>

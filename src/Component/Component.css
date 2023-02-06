@@ -39,7 +39,41 @@ nav ul li{
 nav ul li:hover{
     font-size: 1.2rem;
     transition: all 0.2s ease-in-out;
+    color: red;
 }
 h4{
     color: black;
+}
+.navbar{
+    display: block;
+    unicode-bidi: isolate;
+    margin-block-start: 0.5em;
+    margin-block-end: 0.5em;
+    margin-inline-start: auto;
+    margin-inline-end: auto;
+    overflow: hidden;
+    border-style: inset;
+    border-width: 1px;
+}
+.footer{
+    width: 100%;
+    height: 50px;
+    background-color: aqua;
+    color: black;
+    margin-top: 30px;
+}
+p{
+    font-size: x-large;
+    padding-top: 10px;
+}
+@media only screen and (min-width:330px )and (max-width: 1024px) and (orientation: landscape){
+    .nav-iteam ul{
+        justify-content: space-between;
+        padding: 0;
+        margin: 0;
+        list-style-type: none;
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem;
+    }
 }
