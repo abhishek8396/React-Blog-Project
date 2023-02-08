@@ -24,7 +24,8 @@ function App() {
         <Route path='/Hollywood' element={<Hollywood/>}/>
         <Route path='/Fitness' element={<Fitness/>}/>
         <Route path='/Food' element={<Food/>}/>
-        <Route path='/Bollywood/:name' element={<FullView/>}/>
+        <Route path='/:view' element={<FullView/>}/>
+        <Route path='Bollywood/:view' element={<FullView/>}/>
         <Route path='/Hollywood/:view' element={<FullView/>}/>
         <Route path='/Technology/:view' element={<FullView/>}/>
         <Route path='/Fitness/:view' element={<FullView/>}/>

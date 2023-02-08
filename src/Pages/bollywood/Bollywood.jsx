@@ -5,7 +5,7 @@ import './bollywood.css'
 
 
 
-function Bollywood(props) {
+function Bollywood() {
   const bollywoodTiles =[
     {
       img:'https://i.gadgets360cdn.com/products/large/Chhatriwali-1-800x800-1674207243685.jpg?downsize=*:420',
@@ -29,7 +29,7 @@ function Bollywood(props) {
   ]
   return (
     <>
-    <div className={props ?'bollywood-titles': 'bollywood-latest-section'}>
+    <div className='bollywood-titles'>
         <div className='latest-bollywood'>Latest Bollywood News</div><hr/>
       </div>
     <div className='home-bollywood'>

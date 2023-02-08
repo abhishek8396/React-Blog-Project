@@ -61,6 +61,7 @@ h4{
     background-color: aqua;
     color: black;
     margin-top: 30px;
+    text-align: center;
 }
 p{
     font-size: x-large;
@@ -68,12 +69,11 @@ p{
 }
 @media only screen and (min-width:330px )and (max-width: 1024px) and (orientation: landscape){
     .nav-iteam ul{
-        justify-content: space-between;
         padding: 0;
         margin: 0;
         list-style-type: none;
         display: flex;
         flex-direction: column;
-        gap: 0.5rem;
+        
     }
 }
